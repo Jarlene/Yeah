@@ -1,0 +1,28 @@
+Yeah
+Copyright 2026 Yeah contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party components
+----------------------
+
+The full generated inventory of bundled third-party software is maintained in
+the file THIRD-PARTY-NOTICES and in Cargo.lock. This NOTICE records only the
+attribution required by components that are referenced by the plugin-native
+work (COS-1544) and that are not already covered by that generated inventory.
+
+pi-rust
+  Origin:       https://github.com/bigfish1913/pi-rust
+  Reference:    61c833cd40e4fb818d715524e624546c8ee20c9d (design snapshot)
+  License:      MIT
+  Copyright:    see the upstream LICENSE file; the upstream MIT copyright
+                line is reproduced here verbatim when the first file is adopted
+  Attribution:  design reference for the plugin mechanism migration
+                (manifest schema, plugin ABI/versioning, sidecar protocol,
+                capability model). No pi-rust source code has been copied
+                into this repository yet; see docs/legal/clean-room-record.md
+                for the adoption procedure and the current status.
+
+License texts are distributed with the components they apply to and are not
+duplicated here. Any adoption of third-party source code must update this file
+in the same change that adds the code (TASK-004 gate).

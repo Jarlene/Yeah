@@ -1,0 +1,48 @@
+# cargo-deny configuration for the plugin-native migration (TASK-004).
+#
+# Scope: this file is the machine-readable half of the licence gate. The
+# offline companion check is scripts/ci/license-check.sh, which validates the
+# allow-list below, the NOTICE attribution and the clean-room record.
+
+[graph]
+all-features = false
+
+[advisories]
+version = 2
+yanked = "warn"
+ignore = []
+
+[licenses]
+version = 2
+confidence-threshold = 0.9
+# Permissive licences only. Anything not listed here fails closed; adding a
+# licence (especially a copyleft family) requires a TASK-004 review entry in
+# docs/legal/clean-room-record.md.
+allow = [
+    "0BSD",
+    "Apache-2.0",
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BSL-1.0",
+    "CC0-1.0",
+    "ISC",
+    "MIT",
+    "MIT-0",
+    "MPL-2.0",
+    "OpenSSL",
+    "Unicode-3.0",
+    "Zlib",
+]
+exceptions = []
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+
+[sources]
+unknown-registry = "warn"
+unknown-git = "warn"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+# The workspace root patches crates-io with a fork of async-openai.
+allow-git = ["https://github.com/our-forks/async-openai.git"]

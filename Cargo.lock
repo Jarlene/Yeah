@@ -15467,6 +15467,30 @@ dependencies = [
 ]
 
 [[package]]
+name = "xai-plugin-native-api"
+version = "0.1.0"
+
+[[package]]
+name = "xai-plugin-native-runtime"
+version = "0.1.0"
+
+[[package]]
+name = "xai-plugin-native-sidecar"
+version = "0.1.0"
+
+[[package]]
+name = "xai-plugin-pi-compat"
+version = "0.1.0"
+
+[[package]]
+name = "xai-plugin-sdk"
+version = "0.1.0"
+
+[[package]]
+name = "xai-plugin-testkit"
+version = "0.1.0"
+
+[[package]]
 name = "xai-prompt-queue"
 version = "0.1.0"
 dependencies = [
