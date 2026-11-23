@@ -39,6 +39,7 @@ mod mcp_server_config;
 pub mod mcp_servers;
 mod memory_v2;
 mod paths;
+pub mod plugin_features;
 mod remote_announcement;
 mod remote_fetch;
 mod remote_settings;
